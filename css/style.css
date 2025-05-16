@@ -1,0 +1,97 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, #b3e5fc, #e1f5fe);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .content-box {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    text-align: center;
+  }
+  
+  h1.display-4 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: #01579b;
+  }
+  
+  p.lead {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #0277bd;
+  }
+  
+  p.fst-italic {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    color: #01579b;
+    opacity: 0.8;
+  }
+  
+  button#showMagic {
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button#showMagic:hover {
+    background-color: #81d4fa;
+    color: #01579b;
+    cursor: pointer;
+  }
+  
+  .butterfly {
+    width: 150px;
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .flying-butterfly, .flying-flower {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    will-change: transform;
+  }
+  
+  .flying-butterfly {
+    width: 80px;
+  }
+  
+  .flying-flower {
+    width: 100px;
+  }
+  
+  @media (max-width: 768px) {
+    .butterfly {
+      width: 100px;
+    }
+    h1.display-4 {
+      font-size: 2.5rem;
+    }
+  }
+  
